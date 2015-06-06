@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper,sans,english]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[scale=0.75,a4paper]{geometry}
+\usepackage{babel}
+\quote{An eccentric programmer who likes math and computer-science.}
+%----------------------------------------------------------------------------------
+%            personal data
+%----------------------------------------------------------------------------------
+\firstname{Thomas}
+\familyname{Gebert}
+                              % optional, remove/comment the line if not wanted
+\address{1071 Saint Nicholas Ave.}{New York, NY}{United States}         % optional, remove/comment the line if not wanted; the "country" arguments can be omitted or provided empty
+                          % optional, remove/comment the line if not wanted
+\phone{214-355-8547}                           % optional, remove/comment the line if not wanted
+                         % optional, remove/comment the line if not wanted
+\email{thomasgebert@gmail.com}                               % optional, remove/comment the line if not wanted
+\homepage{www.gebert.sexy}                         % optional, remove/comment the line if not wanted
+                 % optional, remove/comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, uncomment the line if wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+                              % optional, remove/comment the line if not wanted
+%
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Education}
+\cventry{2010--2016}{Mathematics}{Florida Sate University}{Tallahassee, Florida}{}{} 
+\section{Experience}
+\subsection{Vocational}
+\cventry{May 2011 -- August 2011}{Software Engineering Intern}{Lockheed Martin}{Orlando, Florida}{}{
+	\begin{itemize}
+		\item Wrote image processing software
+		\item Ported software to ARM CPUs
+	\end{itemize}}
+\cventry{January 2012 -- December 2012}{Web Developer}{Amerinational Management Services}{Orlando, Florida}{}{
+	\begin{itemize}
+		\item Wrote web applications in Flash and Coldfusion
+		\item Wrote SQL scripts in SQL Server
+	\end{itemize}
+	}
+\cventry{January 2013 -- June 2013}{Software Engineer}{Propulsion Labs}{Dallas, Texas}{}{
+	\begin{itemize}
+		\item Wrote applications for iOS
+		\item Created applications using PhoneGap and Cordova
+		\item Wrote programs using JavaScript and KendoUI
+	\end{itemize}
+	}
+\cventry{June 2013 -- April 2014}{Software Engineer}{Senico, LLC}{Dallas, Texas}{}{\begin{itemize}
+		\item Wrote web-application servers in Node.JS
+		\item Created an MVC-compliant web-framework for KoaJS
+		\item Wrote web-application frontends in Angular.JS
+		\item Managed several projects
+	\end{itemize}}
+\cventry{May 2014 -- February 2015}{Application Developer}{Sq1}{Dallas, Texas}{}{\begin{itemize}
+		\item Wrote web applications using Angular.JS and Node.JS.
+		\item Wrote deployment scripts for web applications.
+		\item Lead the developer for the Shell Gasoline revamped coupon portal. 
+	\end{itemize}}
+\cventry{March 2015 -- Present}{Junior Research Scientist}{New York University}{New York, New York}{}{\begin{itemize}
+		\item Debug Angular.JS frontends.
+		\item Debug Scala backends. 
+		\item Help write Haskell backends. 
+	\end{itemize}}
+
+\section{Computer skills}
+\cvdoubleitem{Haskell}{Building a website}{Node.JS}{Wrote two MVC Frameworks}
+\cvdoubleitem{CoffeeScript}{Makes Node tolerable. }{JavaScript}{Needed for Angular.JS}
+\cvdoubleitem{Erlang}{Working on a side project}{Scala}{Currently debugging}
+\cvdoubleitem{Play Framework}{Currently debugging}{}{}
+\section{Side Projects}
+\cvitem{Frameworkey}{An MVC Framework for KoaJS}
+\cvitem{Frameworkey: Promise Edition}{An MVC framework for Node.JS allowing for composable routes }
+\cvitem{Haskell Parallel Fizzbuzz}{An implementation of the classic "Fizzbuzz" in Haskell, running in-parallel. }
+\cvitem{HGOL}{An implementation of Conway's Game of Life, written in Haskell. }
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Bobby Gammill}{Colleague: 407-913-9973}
+  \cvcolumn{Darren Green}{Coworker: 214-302-7807}
+  \cvcolumn{Will Nielsen}{Manager: 972-983-6228}
+\end{cvcolumns}
+\clearpage
+\end{document}
