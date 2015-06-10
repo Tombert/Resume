@@ -4,6 +4,7 @@
 %\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 \usepackage[scale=0.75,a4paper]{geometry}
+\usepackage{multicol}
 \usepackage{babel}
 \quote{An eccentric programmer who likes math and computer-science.}
 %----------------------------------------------------------------------------------
@@ -54,23 +55,39 @@
 \cventry{January 2012 -- December 2012}{Web Developer}{Amerinational Management Services}{Orlando, Florida}{}{
 	\begin{itemize}
 		\item Wrote web applications in Flash and Coldfusion
-		\item Wrote SQL scripts in SQL Server
+		\item Wrote SQL scripts for SQL Server
 	\end{itemize}
 }
 \cventry{May 2011 -- August 2011}{Software Engineering Intern}{Lockheed Martin}{Orlando, Florida}{}{
 	\begin{itemize}
 		\item Wrote image processing software
 		\item Ported software to ARM CPUs
+		\item Utilized the OpenCV library. 
 	\end{itemize}}
 
 
 
 
 \section{Computer skills}
-\cvdoubleitem{Haskell}{Building a website}{Node.JS}{Wrote two MVC Frameworks}
-\cvdoubleitem{CoffeeScript}{Makes Node tolerable. }{JavaScript}{Needed for Angular.JS}
-\cvdoubleitem{Erlang}{Working on a side project}{Scala}{Currently debugging}
-\cvdoubleitem{Play Framework}{Currently debugging}{}{}
+\begin{multicols}{4}
+	\begin{itemize}
+		\item Haskell
+		\item CoffeeScript
+		\item JavaScript
+		\item Node.JS
+		\item Angular.JS
+		\item Erlang
+		\item Play Framework
+		\item Git
+		\item C++
+		\item Java
+		\item Scala
+		\item Bash/ZSH
+		\item Python
+		\item Django
+		\item FFMpeg
+	\end{itemize}
+\end{multicols}
 \section{Side Projects}
 \cvitem{Frameworkey}{An MVC Framework for KoaJS}
 \cvitem{Frameworkey: Promise Edition}{An MVC framework for Node.JS allowing for composable routes }
