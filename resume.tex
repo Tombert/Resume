@@ -6,7 +6,7 @@
 \usepackage[scale=0.75,a4paper]{geometry}
 \usepackage{multicol}
 \usepackage{babel}
-\quote{An eccentric programmer who likes math and computer-science.}
+%\quote{An eccentric programmer who likes math and computer science.}
 %----------------------------------------------------------------------------------
 %            personal data
 %----------------------------------------------------------------------------------
@@ -25,7 +25,43 @@
 %
 \begin{document}
 %-----       resume       ---------------------------------------------------------
+
+
+
 \makecvtitle
+\section{Computer skills}
+\begin{multicols}{4}
+	\begin{itemize}
+		\item[] Haskell
+		\item[] Go
+		\item[] \LaTeX
+		\item[] CoffeeScript
+		\item[] JavaScript
+		\item[] Node.JS
+		\item[] Express
+		\item[] Socket.IO
+		\item[] Koa
+		\item[] Angular.JS
+		\item[] jQuery
+		\item[] Erlang/OTP
+		\item[] Elixir
+		\item[] Play Framework
+		\item[] Tmux
+		\item[] Git
+		\item[] Vim
+		\item[] Emacs
+		\item[] C
+		\item[] C++
+		\item[] Java
+		\item[] Scala
+		\item[] Bash
+		\item[] Zsh
+		\item[] Python
+		\item[] Django
+		\item[] FFMpeg
+		\item[] FreeBSD
+	\end{itemize}
+\end{multicols}
 \section{Education}
 \cventry{2010--2016}{Mathematics}{Florida State University}{Tallahassee, Florida}{}{} 
 \section{Experience}
@@ -33,6 +69,7 @@
 		\item Debug Angular.JS frontends.
 		\item Debug Scala backends. 
 		\item Help write Haskell backends. 
+		\item Programmatically use FFMpeg for video transcoding. 
 	\end{itemize}}
 \cventry{May 2014 -- February 2015}{Application Developer}{Sq1}{Dallas, Texas}{}{\begin{itemize}
 		\item Wrote web applications using Angular.JS and Node.JS.
@@ -43,7 +80,8 @@
 		\item Wrote web-application servers in Node.JS
 		\item Created an MVC-compliant web-framework for KoaJS
 		\item Wrote web-application frontends in Angular.JS
-		\item Managed several projects
+		\item Wrote application backends for mobile applications
+		\item Managed projects in Symfony, CodeIgniter, and Node.JS
 	\end{itemize}}
 \cventry{January 2013 -- June 2013}{Software Engineer}{Propulsion Labs}{Dallas, Texas}{}{
 	\begin{itemize}
@@ -63,43 +101,14 @@
 		\item Wrote image processing software.
 		\item Obtained security clearance. 
 		\item Ported software to ARM CPUs.
+		\item Optimized C++ backend
 		\item Utilized the OpenCV library. 
 	\end{itemize}}
 
 
 
 
-\section{Computer skills}
-\begin{multicols}{4}
-	\begin{itemize}
-		\item[] Haskell
-		\item[] Go
-		\item[] \LaTeX
-		\item[] CoffeeScript
-		\item[] JavaScript
-		\item[] Node.JS
-		\item[] Express
-		\item[] Socket.IO
-		\item[] Koa
-		\item[] Angular.JS
-		\item[] jQuery
-		\item[] Erlang
-		\item[] Elixir
-		\item[] Play Framework
-		\item[] Tmux
-		\item[] Git
-		\item[] Vim
-		\item[] Emacs
-		\item[] C++
-		\item[] Java
-		\item[] Scala
-		\item[] Bash
-		\item[] Zsh
-		\item[] Python
-		\item[] Django
-		\item[] FFMpeg
-	\end{itemize}
-\end{multicols}
+
 \section{Side Projects}
 \cvitem{Frameworkey}{An MVC Framework for KoaJS}
 \cvitem{Frameworkey: Promise Edition}{An MVC framework for Node.JS allowing for composable routes }
@@ -107,6 +116,7 @@
 \cvitem{Fetchkeys}{A command-line utility to get SSH public keys from Github. }
 \cvitem{Yil}{A library for KoaJS to convert callback-style functions into a yield-friendly generator. }
 \cvitem{HGOL}{An implementation of Conway's Game of Life, written in Haskell. }
+\cvitem{StockScrape}{An application to scrape Yahoo Stocks, written in Haskell}
 \begin{center}
 For more, please visit github.com/tombert
 \end{center}
