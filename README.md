@@ -1,6 +1,21 @@
 # Resumé 
 My resume, written in LaTeX
 
+### Installation 
+
+This is the fairly basic ModernCV template.  On Ubuntu, you need to install LaTeX using the `texlive` package, along with the `texlive-latex-extra` package: 
+
+```
+sudo apt-get install texlive texlive-latex-extra
+```
+
+Then you should be able to run it: 
+
+```
+pdflatex resume.tex
+```
+
+...Or you could just download the PDF that's in the repo.  That's cool too. 
 
 ---
 
