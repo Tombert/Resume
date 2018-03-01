@@ -15,9 +15,9 @@
                               % optional, remove/comment the line if not wanted
 \address{1071 Saint Nicholas Ave.}{New York, NY}{United States}         % optional, remove/comment the line if not wanted; the "country" arguments can be omitted or provided empty
                           % optional, remove/comment the line if not wanted
-\phone{214-355-8547}                           % optional, remove/comment the line if not wanted
+\phone{214-451-7333}                           % optional, remove/comment the line if not wanted
                          % optional, remove/comment the line if not wanted
-\email{thomas@gebert.sexy}                               % optional, remove/comment the line if not wanted
+\email{thomasgebert@gmail.com}                               % optional, remove/comment the line if not wanted
 % \homepage{www.gebert.sexy}                         % optional, remove/comment the line if not wanted
                  % optional, remove/comment the line if not wanted
 % \photo[64pt][0.4pt]{picture}                       % optional, uncomment the line if wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
@@ -45,27 +45,33 @@
 		\item[] Play Framework
 		\item[] tmux
 		\item[] Git
-		\item[] Rust
 		\item[] Vim
 		\item[] Scala
 		\item[] \textbf{FFMpeg}
 		\item[] FreeBSD
 		\item[] Linux
-		\item[] FreeNAS
-                \item[] TLA+
+        \item[] TLA+
 	\end{itemize}
 \end{multicols}
 \section{Experience}
-\cventry{July 2016 -- Present}{Software Engineer}{Jet.com}{Hoboken, New Jersey}{}{\begin{itemize}
+\cventry{July 2016 -- Present}{Senior Software Engineer}{Jet.com}{Hoboken, New Jersey}{}{\begin{itemize}
                \item Write Microservices in F\#
+           \item Utilized the Microsoft Azure stack \begin{itemize}
+              \item Used the CosmosDB NoSQL store. 
+              \item Used Azure Functions to handle serverless systems. 
+              \item Used Table Storage for larger, lower-access data. 
+           \end{itemize}
+           \item Participated in the development of an event-source database.
 	       \item Use Apache Kafka to send data between services.
 	       \item Write a push notification server.
 	       \item Rebuilt the transactional email system to scale to Jet.com size. \begin {itemize}
 	             \item Handles every Order Confirmation, Item Shipped, Order Cancelled, and Password Reset email on the website.
                \end{itemize}
+           \item Wrote and discussed design documents for large, distributed systems. 
 	       \item Taught the F\# language during code bootcamps. 
 	       \item Utilized TensorFlow Machine Learning to recommend products and choose ideal times to send marketing emails.
-	       \item Built a functioning and scalable Youtube clone during hackathon. 
+	       \item Built a fully distributed P2P clone of YouTube during a hackathon. 
+	       \item Gave talks on the Idris programming language, the Vim text editor, and the TLA+ model-checker. 
        \end{itemize}}
 \cventry{September 2015 -- June 2016}{Software Engineer}{Tone Mobile}{New York, New York}{}{\begin{itemize}
 		\item Write and maintain Erlang backends
@@ -128,12 +134,11 @@
 
 
 \section{Side Projects}
-\cvitem{Frameworkey: Erlang}{A massively scalable MVC Framework for Erlang that (currently) handles loads of 200,000 concurrent users on a single machine, with composable routes to allow rapid development}
+\cvitem{FSharp.Csv}{A reflection-based CSV serializer, written in F\#, designed to handle large, multi-gigabyte CSV files, while providing a simple, functional interface, and remaining relatively fast. }
+\cvitem{Vertigo.Json}{A reflection-based JSON serializer and deserializer, designed to be used with F\#, with an emphasis on being easy-to-use, fast, and null-safe. }
+\cvitem{Scudlib}{A library, written in Clojure, to do homomorphic encryption.  Currently supports the Pallier algorithm. }
+\cvitem{Frameworkey: Erlang}{A massively scalable MVC Framework for Erlang that (currently) handles loads of roughly 100,000 concurrent users on a single machine, with composable routes to allow rapid development}
 \cvitem{Frameworkey: Promise Edition}{An MVC framework for Node.JS allowing for composable routes }
-\cvitem{Haskell Parallel Fizzbuzz}{An implementation of the classic "Fizzbuzz" in Haskell, running in-parallel. }
-\cvitem{Fetchkeys}{A command-line utility to get SSH public keys from Github. }
-\cvitem{Yil}{A library for KoaJS to convert callback-style functions into a yield-friendly generator. }
-\cvitem{HGOL}{An implementation of Conway's Game of Life, written in Haskell. }
 \cvitem{StockScrape}{An application to scrape Yahoo Stocks, written in Haskell}
 \begin{center}
 For more, please visit github.com/tombert
