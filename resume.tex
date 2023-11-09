@@ -13,12 +13,12 @@
 \firstname{Thomas}
 \familyname{Gebert}
                               % optional, remove/comment the line if not wanted
-\address{693 Thomas S Boyland St.}{Brooklyn, NY}{United States}         % optional, remove/comment the line if not wanted; the "country" arguments can be omitted or provided empty
+ \address{693 Thomas S Boyland St.}{Brooklyn, NY}{United States}         % optional, remove/comment the line if not wanted; the "country" arguments can be omitted or provided empty
 
                           % optional, remove/comment the line if not wanted
-\phone{214-451-7333}                           % optional, remove/comment the line if not wanted
+ \phone{214-451-7333}                           % optional, remove/comment the line if not wanted
                          % optional, remove/comment the line if not wanted
-\email{thomas@gebert.app}                               % optional, remove/comment the line if not wanted
+ \email{thomas@gebert.app}                               % optional, remove/comment the line if not wanted
 % \homepage{www.gebert.sexy}                         % optional, remove/comment the line if not wanted
                  % optional, remove/comment the line if not wanted
 % \photo[64pt][0.4pt]{picture}                       % optional, uncomment the line if wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
@@ -32,12 +32,11 @@
 \section{Computer skills}
 \begin{multicols}{4}
 	\begin{itemize}
+		\item[] \textbf{Java 17}
 		\item[] \textbf{Python}
 		\item[] \textbf{SQL}
 		\item[] \textbf{Clojure}
-		\item[] \textbf{Haskell}
-		\item[] \textbf{Erlang/OTP}
-		\item[] Java
+		\item[] Erlang/OTP
 		\item[] Linux
 		\item[] Shell Scripting
 		\item[] ZeroMQ
@@ -50,17 +49,21 @@
 		\item[] Node.JS
 		\item[] .NET Framework
 		\item[] Scala
-		\item[] \textbf{FFMpeg}
+		\item[] FFMpeg
         \item[] TLA+
 	\end{itemize}
 \end{multicols}
 \section{Education}
 \cventry{}{B.S. Computer Science}{Western Governor's University}{Salt Lake City, UT}{}{} 
-\cventry{}{Ph.D. Computer Science}{University of York}{York, United Kingdom}{Formal Methods}{Currently Enrolled} 
 \section{Experience}
-\cventry{August 2022 -- June 2023}{Adjunct Lecturer}{CUNY City Tech}{New York, New York}{}{\begin{itemize}
+
+\cventry{September 2023 -- November 2023}{Senior Software Engineer}{Lead bank}{New York, New York}{}{\begin{itemize}
+	\item Helped scale and maintain the ACH processing system. 
+	\item Worked with AWS Lambda, AWS Step Functions, Go, Java, and DynamoDB. 
+\end{itemize}}
+\cventry{August 2022 -- June 2023}{Adjunct Lecturer (Contract)}{CUNY City Tech}{New York, New York}{}{\begin{itemize}
 	\item Taught introductory programming to computer engineering students.  \begin{itemize}
-		\item Introductory and advanced Python and Java. 
+		\item Introductory and advanced Python 3 and Java 17. 
 	\end{itemize}
     \item Created and graded homework assignments and tests.
     \item Coded interactive learning modules in JavaScript and Python for students to practice.
@@ -68,28 +71,31 @@
 \end{itemize}}
 \cventry{August 2022 -- November 2022}{Senior Software Engineer}{Reddit Inc.}{New York, New York}{}{\begin{itemize}
 	\item Used Python, Go, and Docker to help rebuild the image resizing service. 
+	\item Utilized Kafka to build distributed systems. 
 	\item Wrote build configuration scripts in Python.  
-	\item Worked both in-person and remote. 
+	\item Decreased cost of image resizing by over forty percent by moving service in-house instead of outsourcing. 
 \end{itemize}}
 
 \cventry{August 2021 -- August 2022}{Staff Software Engineer}{Walmart Global Tech}{New York, New York}{}{\begin{itemize}
 	\item Mentored junior and mid-level engineers in distributed computing and functional programming. 
+	\item Made use of message queues to schedule and partition work across multiple nodes. 
 	\item Delegated and managed work across several engineers when designing distributed systems. 
 	\item Built NLU pipelines for the Chatbot on walmart.com utilizing the Microsoft Bot Framework. \begin{itemize}
 		\item Utilized the Microsoft Bot Framework, F\# and C\#. 
 	\end{itemize}
         \item Coordinated the release of multi-cluster deployment of chatbot. 
         \item Utilized Microsoft Azure, Linux, and Python to build infrastructure. 
+	\item Decreased chatbot latency by over thirty percent across multiple clusters. 
 \end{itemize}}
 
-\cventry{March 2021 -- August 2021}{Staff Software Engineer}{Thrive Global}{New York, New York}{}{\begin{itemize}
+\cventry{March 2021 -- August 2021}{Contract Engineer}{Thrive Global}{New York, New York}{}{\begin{itemize}
 		\item Utilized Node.js to build the localization features. 
 		\item Used Docker to build microservices. 
 		\item Wrote build scripts in Python. 
 \end{itemize}}
 
 \cventry{September 2018 -- February 2021}{Senior Software Engineer}{Apple Inc.}{New York, New York}{}{\begin{itemize}
-	\item Designed and built a telemetry and analytics system for finding potential bottlenecks in the cache indexes utilizing Java, Clojure, Kafka, Apache Spark, and Tableau. 
+	\item Designed and built a telemetry and analytics system for finding potential bottlenecks in the cache indexes utilizing Java 11, Clojure, Kafka, Apache Spark, and Tableau. 
 	\item Fixed issues and bugs in the iTunes server backend. 
         \item Built a Kafka-based buffering service to reduce load on indexing and caching for iTunes. 
 	\item Maintained and expanded rule engine for iTunes, utilizing Objective-C and C++. 
