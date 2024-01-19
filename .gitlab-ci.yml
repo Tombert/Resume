@@ -23,4 +23,4 @@ release:
   stage: deploy
   image: gcc:latest
   script: 
-    - 'curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file a.out "$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$CI_PROJECT_NAME/$CI_COMMIT_REF_NAME/a.out"'
+    - 'curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file resume.pdf "$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$CI_PROJECT_NAME/$CI_COMMIT_REF_NAME/resume.pdf"'
