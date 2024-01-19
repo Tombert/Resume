@@ -22,15 +22,10 @@ build:
 release:
   stage: deploy
   image: registry.gitlab.com/gitlab-org/release-cli:latest
-  script:
-    - echo "Releasing the resume PDF"
+  script: "curl --header 'JOB-TOKEN: $CI_JOB_TOKEN' --upload-file a.out '$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$CI_PROJECT_NAME/$CI_COMMIT_REF_NAME/resume.pdf"
   release:
     name: 'Release $CI_COMMIT_REF_NAME'
     description: 'Generated resume PDF'
     tag_name: 'release-$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA'
-    assets:
-      links:
-        - name: resume.pdf
-          url: "${CI_PROJECT_URL}/-/jobs/artifacts/${CI_COMMIT_REF_NAME}/raw/resume.pdf?job=${CI_JOB_NAME}"
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
