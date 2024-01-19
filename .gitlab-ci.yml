@@ -24,10 +24,3 @@ release:
   image: gcc:latest
   script: 
     - 'curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file a.out "$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$CI_PROJECT_NAME/$CI_COMMIT_REF_NAME/a.out"'
-
-  release:
-    name: 'Release $CI_COMMIT_REF_NAME'
-    description: 'Generated resume PDF'
-    tag_name: 'release-$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA'
-  rules:
-    - if: '$CI_COMMIT_BRANCH == "master"'
