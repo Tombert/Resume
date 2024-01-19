@@ -15,17 +15,5 @@ build:
   artifacts:
     paths:
       - resume.pdf
-    expire_in: 1 week
   rules:
     - if: '$CI_COMMIT_BRANCH == "master"'
-
-release:
-  stage: deploy
-  image: registry.gitlab.com/gitlab-org/release-cli:latest
-  script:
-    - echo "Creating release"
-  release:
-    name: 'Release $CI_COMMIT_TAG'
-    description: 'updated resume'
-    tag_name: 'release-$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA'
-    ref: '$CI_COMMIT_SHA'
