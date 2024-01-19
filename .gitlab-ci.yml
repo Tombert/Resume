@@ -6,21 +6,31 @@
 
 ---
 variables:
-  # Feel free to choose the image that suits you best.
-  # blang/latex:latest ... Former image used in this template. No longer maintained by author.
-  # listx/texlive:2020 ... The default, referring to TexLive 2020. Current at least to 2021-02-02.
-
-  # Additional alternatives with high Docker pull counts:
-  # thomasweise/docker-texlive-full
-  # thomasweise/texlive
-  # adnrv/texlive
   LATEX_IMAGE: listx/texlive:2020
 
 build:
   image: $LATEX_IMAGE
   script:
     - latexmk -pdf resume.tex
-
   artifacts:
     paths:
-      - "*.pdf"
+      - resume.pdf
+    expire_in: 1 week
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
+
+release:
+  stage: deploy
+  image: $LATEX_IMAGE
+  script:
+    - echo "Releasing the resume PDF"
+  release:
+    name: 'Release $CI_COMMIT_REF_NAME'
+    description: 'Generated resume PDF'
+    tag_name: 'release-$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA'
+    assets:
+      links:
+        - name: resume.pdf
+          url: "$CI_PROJECT_URL/-/jobs/$CI_JOB_ID/artifacts/download?file=resume.pdf"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "master"'
