@@ -21,6 +21,9 @@ build:
 
 release:
   stage: deploy
-  image: gcc:latest
-  script: 
-    - 'curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file a.out "$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$CI_PROJECT_NAME/$CI_COMMIT_REF_NAME/a.out"'
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  release:
+    name: 'Release $CI_COMMIT_TAG'
+    description: release_notes.md
+    tag_name: '$CI_COMMIT_TAG'
+    ref: '$CI_COMMIT_SHA'
