@@ -23,23 +23,4 @@ release:
   stage: deploy
   image: gcc:latest
   script: 
-   script:
-    - apt-get update && apt-get install -y jq
-    - RELEASE_NAME="Release $(date +'%Y-%m-%d %H:%M:%S')"
-    - RELEASE_DESCRIPTION="Release for commit $CI_COMMIT_SHORT_SHA"
-    - >
-      curl --header 'Content-Type: application/json' --header "JOB-TOKEN: $CI_JOB_TOKEN" 
-      --data '{
-        "name": "'"$RELEASE_NAME"'",
-        "tag_name": "'"$CI_COMMIT_REF_NAME"'",
-        "description": "'"$RELEASE_DESCRIPTION"'",
-        "assets": {
-          "links": [{
-            "name": "a.out",
-            "url": "'"$CI_PROJECT_URL"/-/jobs/$CI_JOB_ID/artifacts/a.out",
-            "filepath": "/a.out",
-            "link_type": "other"
-          }]
-        }
-      }'
-      "$CI_API_V4_URL/projects/$CI_PROJECT_ID/releases"
+    - 'curl --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file a.out "$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/$CI_PROJECT_NAME/$CI_COMMIT_REF_NAME/a.out"'
