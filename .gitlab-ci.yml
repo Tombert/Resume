@@ -10,7 +10,7 @@ variables:
 
 build:
   image: $LATEX_IMAGE
-  script:
+  script: 
     - latexmk -pdf resume.tex
   artifacts:
     paths:
