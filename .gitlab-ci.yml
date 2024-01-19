@@ -19,7 +19,7 @@ variables:
 build:
   image: $LATEX_IMAGE
   script:
-    - latexmk -pdf
+    - latexmk -pdf resume.tex
 
   artifacts:
     paths:
