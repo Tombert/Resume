@@ -6,8 +6,8 @@
         flake-utils.url = "github:numtide/flake-utils";
     };
 
-    outputs = { self, nixpkgs, flake-utils, ...}: 
-        flake-utils.lib.eachDefaultSystem(system:
+    outputs = { self, nixpkgs, flake-utils}: 
+        with flake-utils.lib; eachSystem allSystems (system:
             let
                 pkgs = import nixpkgs {
                     inherit system;
@@ -20,10 +20,17 @@
                         ];
                     };
 
-                    defaultPackage = pkgs.stdenv.mkDerivation {
+                    defaultPackage = pkgs.stdenv.mkDerivation rec {
                                 name = "Resume Build";
                                 src = self; 
-                                phases = ["buildPhase" "installPhase"];
+                                phases = ["unpackPhase" "buildPhase" "installPhase"];
+                                preBuild = ''
+                                    echo "Current directory:"
+                                    pwd
+                                    echo "Listing files:"
+                                    ls
+                                    exit 64
+                                '';
                                 buildInputs = [
                                     pkgs.texlive.combined.scheme-full
                                 ];

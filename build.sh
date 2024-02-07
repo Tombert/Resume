@@ -1,9 +1,6 @@
-# Define variables
-RESUME_SOURCE="resume.tex"
-RESUME_OUTPUT="resume.pdf"
+#!/bin/bash
 
-# Compile the resume using pdflatex
-pdflatex -output-directory=out "$RESUME_SOURCE"
+nix build
 
-# Move the generated PDF to the output directory
-mv out/*.pdf "$RESUME_OUTPUT"
+cp result/resume.pdf .
+rm -rf result
