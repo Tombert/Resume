@@ -2,4 +2,5 @@
 *.synctex*
 *.aux
 *.log
+result
 resume_html/*
