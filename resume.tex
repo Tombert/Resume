@@ -53,6 +53,7 @@
 		\item[] FFMpeg
 		\item[] CMS
         \item[] TLA+
+	\item[] Vert.x
         \item[] Docker
 	\end{itemize}
 \end{multicols}
@@ -63,6 +64,10 @@
 \cventry{February 2024 -- Present}{Senior Software Engineer}{Schrodinger}{New York, New York}{}{\begin{itemize}
         \item Maintained topology of Kafka Streams applications. 
         \item Augmented RocksDB and optimized write throughput on streaming applications. 
+	\item Replaced the use of RocksDB with a custom backend using PostgreSQL. \begin{itemize} 
+			\item Achieved roughly 50\% the performance while cutting cloud storage costs down by 80\%, and reduced duplication across nodes. 
+			\item Utilized Vert.x, Caffeine Caches, Bloom Filters, LMAX Disrupter, and various heuristics to minimize latency without overwhelming the system. 
+	\end{itemize}
         \item Utilized Google Cloud Platform to deploy and maintain distributed applications. 
 \end{itemize}}
 \cventry{September 2023 -- November 2023}{Senior Software Engineer}{Lead Bank}{New York, New York}{}{\begin{itemize}
