@@ -9,7 +9,7 @@ If you have ![Nix](https://nixos.org/download) installed with Flakes enabled, yo
 nix build
 ```
 
-and nix will take care of everything without you have to muck about with texlive vesions. 
+and nix will take care of everything without you having to muck about with texlive versions. 
 
 You can also do 
 
@@ -42,4 +42,4 @@ pdflatex resume.tex
 
 ---
 
-I realized that I was getting annoyed at constantly having to paroose through old emails to find a copy of my resumé, and I realized there's no reason I couldn't happily store it on GitHub. 
+I realized that I was getting annoyed at constantly having to peruse through old emails to find a copy of my resumé, and I realized there's no reason I couldn't happily store it on GitHub. 
