@@ -244,7 +244,7 @@ projects:
     affiliation: null
     endDate: null
     highlights:
-      - "Durham, NC presentation on distributed media systems."
+      - "Demonstration of distributed video-sharing system using DHTs."
 
 skills:
   - category: Languages
