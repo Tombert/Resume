@@ -1,5 +1,5 @@
 # Resumé 
-My resume, written in LaTeX
+My resume, written in Typst 
 
 ### Installation 
 
@@ -9,7 +9,7 @@ If you have ![Nix](https://nixos.org/download) installed with Flakes enabled, yo
 nix build
 ```
 
-and nix will take care of everything without you having to muck about with texlive versions. 
+and nix will take care of everything without you having to muck about with Typst versions. 
 
 You can also do 
 
@@ -17,25 +17,25 @@ You can also do
 nix develop
 ```
 
-if you just want a shell with texlive installed to hack on stuff. 
+if you just want a shell with Typst installed to hack on stuff. 
 
 #### Old way, Ubuntu, MacOS
-This is the fairly basic ModernCV template.  On Ubuntu, you need to install LaTeX using the `texlive` package, along with the `texlive-latex-extra` package: 
+This is a Typst resume  On Ubuntu, you need to install Typst using the `typst` package.
 
 ```
-sudo apt-get install texlive texlive-latex-extra
+sudo apt install typst
 ```
 
 On macOS: 
 
 ```
-brew install texlive
+brew install typst
 ```
 
 Then you should be able to run it: 
 
 ```
-pdflatex resume.tex
+typst compile template.typ --font-path fonts
 ```
 
 ...Or you could just download the PDF that's in the repo.  That's cool too. 
