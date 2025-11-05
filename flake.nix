@@ -16,7 +16,7 @@
                 { 
                     devShell = pkgs.mkShell {
                         buildInputs = [
-                            pkgs.texlive.combined.scheme-full
+                            pkgs.typst
                         ];
                     };
 
@@ -32,16 +32,16 @@
                                     exit 64
                                 '';
                                 buildInputs = [
-                                    pkgs.texlive.combined.scheme-full
+				    pkgs.typst
                                 ];
 
                                 buildPhase = ''
-                                    pdflatex ./resume.tex
+				   typst compile template.typ --font-path fonts
                                 '';
 
                                 installPhase = ''
                                     mkdir -p $out
-                                    cp resume.pdf $out
+                                    cp template.pdf $out/resume2.pdf
                                 '';
                      };
          });

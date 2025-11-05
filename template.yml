@@ -1,0 +1,263 @@
+personal:
+  name: Thomas Gebert
+  email: thomas@gebert.app
+  phone: "+1 214-451-7333"
+  url: null
+  titles:
+    - Staff Software Engineer 
+  location:
+    city: Brooklyn
+    region: New York
+    country: United States
+  profiles:
+    - network: GitHub
+      username: tombert
+      url: https://github.com/tombert
+  summary: >-
+    Professional software engineer with 10+ years across backend systems,
+    distributed infrastructure, and high-performance computing. Delivered
+    cost-saving platform redesigns and mentored engineers in concurrent and
+    functional programming. Former staff engineer at Walmart; senior roles at
+    Apple and Reddit.
+
+honors: null
+affiliations: null
+work:
+  - organization: Schrödinger
+    url: https://www.schrodinger.com
+    location: New York, NY
+    positions:
+      - position: Senior Software Engineer
+        startDate: 2024-02-01
+        endDate: 2025-04-30
+        highlights:
+          - "Maintained topology of Kafka Streams applications."
+          - "Augmented RocksDB and optimized write throughput on streaming applications."
+          - "Replaced RocksDB with custom PostgreSQL backend (50% of prior throughput) while cutting cloud storage costs by ~80% and reducing duplication across nodes."
+          - "Used Vert.x, Caffeine caches, Bloom filters, and LMAX Disruptor to minimize latency."
+          - "Deployed and maintained distributed apps on Google Cloud Platform."
+
+  - organization: CUNY City Tech
+    url: https://www.citytech.cuny.edu
+    location: New York, NY
+    positions:
+      - position: Adjunct Lecturer (Contract)
+        startDate: 2022-08-01
+        endDate: 2023-06-30
+        highlights:
+          - "Taught introductory and advanced programming (Python 3 and Java 17)."
+          - "Built interactive assignments and automated grading modules."
+          - "Collaborated on robotics and cyber-physical systems curriculum."
+          - "Received perfect student reviews for two consecutive semesters."
+
+  - organization: Reddit, Inc.
+    url: https://www.redditinc.com
+    location: New York, NY
+    positions:
+      - position: Senior Software Engineer
+        startDate: 2022-08-01
+        endDate: 2022-11-30
+        highlights:
+          - "Redesigned image-resizing pipeline in Python and Go, reducing infra cost by approximately 40%."
+
+  - organization: Walmart Global Tech
+    url: https://www.walmart.com
+    location: New York, NY
+    positions:
+      - position: Staff Software Engineer
+        startDate: 2021-08-01
+        endDate: 2022-08-01
+        highlights:
+          - "Mentored engineers in distributed computing and functional programming."
+          - "Designed multi-cluster chatbot architecture (F\\#, C\\#) with >30% latency reduction."
+          - "Led GraphQL API design and multi-cluster deployment on Azure."
+
+  - organization: Thrive Global
+    url: https://thriveglobal.com
+    location: New York, NY
+    positions:
+      - position: Contract Engineer
+        startDate: 2021-03-01
+        endDate: 2021-08-01
+        highlights:
+          - "Built localization features in Node.js and containerized services with Docker."
+
+  - organization: Apple, Inc.
+    url: https://www.apple.com
+    location: New York, NY
+    positions:
+      - position: Senior Software Engineer
+        startDate: 2018-09-01
+        endDate: 2021-02-28
+        highlights:
+          - "Built telemetry & analytics (Java, Clojure, Kafka, Spark, Tableau)."
+          - "Created Kafka buffering for iTunes indexing/caching."
+          - "Maintained rule engine (Objective-C/C++)."
+
+  - organization: Walmart Global Tech (Jet.com)
+    url: https://www.walmart.com
+    location: Hoboken, NJ
+    positions:
+      - position: Senior Software Engineer
+        startDate: 2016-07-01
+        endDate: 2018-08-01
+        highlights:
+          - "Built microservices in F\\# on Azure using Kafka and Spark ML."
+          - "Rebuilt transactional email system to Jet.com scale."
+
+  - organization: Tone Mobile
+    url: null
+    location: New York, NY
+    positions:
+      - position: Software Engineer
+        startDate: 2015-09-01
+        endDate: 2016-06-30
+        highlights: []
+
+  - organization: New York University
+    url: https://www.nyu.edu
+    location: New York, NY
+    positions:
+      - position: Research Scientist
+        startDate: 2015-03-01
+        endDate: 2015-09-30
+        highlights: []
+
+  - organization: Sq1
+    url: null
+    location: Dallas, TX
+    positions:
+      - position: Application Developer
+        startDate: 2014-05-01
+        endDate: 2015-02-28
+        highlights: []
+
+  - organization: Senico, LLC
+    url: null
+    location: Dallas, TX
+    positions:
+      - position: Software Engineer
+        startDate: 2013-06-01
+        endDate: 2014-04-30
+        highlights: []
+
+  - organization: Propulsion Labs
+    url: null
+    location: Dallas, TX
+    positions:
+      - position: Software Engineer
+        startDate: 2013-01-01
+        endDate: 2013-06-30
+        highlights:
+          - "Developed web applications and internal tooling."
+
+  - organization: Amerinational Management Services
+    url: null
+    location: Orlando, FL
+    positions:
+      - position: Web Developer
+        startDate: 2012-01-01
+        endDate: 2012-12-31
+        highlights: []
+
+  - organization: Lockheed Martin
+    url: https://www.lockheedmartin.com
+    location: Orlando, FL
+    positions:
+      - position: Software Engineering Intern
+        startDate: 2011-05-01
+        endDate: 2011-08-31
+        highlights: []
+
+education:
+  - institution: Western Governors University
+    url: https://www.wgu.edu
+    location: Salt Lake City, UT
+    studyType: B.S. Computer Science
+    startDate: null
+    endDate: null
+    highlights: null
+    area: null
+    honors: null
+    courses: null
+
+  - institution: Western Governors University
+    url: https://www.wgu.edu
+    location: Salt Lake City, UT
+    studyType: M.S. Computer Science
+    startDate: null
+    endDate: null
+    highlights: null
+    area: null
+    honors: null
+    courses: null
+
+  - institution: University of York
+    url: https://www.york.ac.uk
+    location: York, United Kingdom
+    studyType: Graduate Studies in Computer Science
+    highlights: null
+    area: null
+    honors: null
+    courses: null
+    startDate: null
+    endDate: null
+    highlights:
+      - "Research in Formal Methods and Robotics (Isabelle, Haskell, FDR4)."
+      - "Verification tools for concurrency-safety in robotic systems."
+
+certificates: null
+languages: null
+interests: null
+projects:
+  - name: "Talk — Lambda Days 2025 — From ‘Java Sucks’ to ‘Java…Eh, Not Bad’"
+    url: null
+    affiliation: null
+    startDate: null
+    endDate: null
+    highlights:
+      - "Overview of Java 21 + Vert.x for functional programmers."
+  - name: "Talk — Lambda Days 2023 — Why Design Your Own Levels When Your Computer Can Do It?"
+    url: null
+    affiliation: null
+    startDate: null
+    endDate: null
+    highlights:
+      - "Procedural generation of video game levels with WebGL and ClojureScript."
+  - name: "Talk — Lambda Days 2022 — Predicting and Preventing Chaos with Formal Methods in TLA+"
+    url: null
+    affiliation: null
+    startDate: null
+    endDate: null
+    highlights:
+      - "Introduction to formal methods with TLA+ demo."
+  - name: "Talk — Lambda Days 2020 — Distributed Hash Tables, Video, and Fun!"
+    affiliation: null
+    url: null
+    startDate: null
+    endDate: null
+    highlights:
+      - "Demonstration of distributed video-sharing system using DHTs."
+  - name: "Talk — Clojure/conj 2019 — Distributed Hash Tables, Video, and Fun!"
+    startDate: null
+    url: null
+    affiliation: null
+    endDate: null
+    highlights:
+      - "Durham, NC presentation on distributed media systems."
+
+skills:
+  - category: Languages
+    skills: ["Java", "Python", "SQL", "Clojure", "C++", "F#", "Go", "JavaScript", "Scala", "Erlang/OTP"]
+  - category: Platforms & Frameworks
+    skills: [".NET Framework", "Vert.x", "Node.js", "Docker", "ZeroMQ", "core.async"]
+  - category: Data & Streaming
+    skills: ["Kafka", "Apache Spark", "PostgreSQL", "RocksDB"]
+  - category: Cloud & Systems
+    skills: ["GCP", "AWS", "Linux", "Shell Scripting"]
+  - category: Media & Tools
+    skills: ["FFmpeg"]
+
+awards: []
+publications: []
+references: []
