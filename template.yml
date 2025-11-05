@@ -233,7 +233,7 @@ skills:
   - category: Platforms & Frameworks
     skills: [".NET Framework", "Vert.x", "Node.js", "Docker", "ZeroMQ", "core.async"]
   - category: Data & Streaming
-    skills: ["Kafka", "Apache Spark", "PostgreSQL", "RocksDB"]
+    skills: ["Kafka", "Apache Spark", "PostgreSQL", "RocksDB", "Cassandra"]
   - category: Cloud & Systems
     skills: ["GCP", "AWS", "Linux", "Shell Scripting"]
   - category: Media & Tools
