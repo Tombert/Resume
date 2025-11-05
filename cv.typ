@@ -158,8 +158,8 @@
     if ("education" in info) and (info.education != none) {block[
         == #title
         #for edu in info.education {
-            let start = if (edu.startDate != none) {utils.strpdate(edu.startDate)} else {none}
-            let end = if (edu.endDate != none) { utils.strpdate(edu.endDate)} else {none}
+            let start = if ("startDate" in edu and edu.startDate != none ) {utils.strpdate(edu.startDate)} else {none}
+            let end = if ("endDate" in edu and edu.endDate != none) { utils.strpdate(edu.endDate)} else {none}
 
             let edu-items = ""
             if ("honors" in edu) and (edu.honors != none) {edu-items = edu-items + "- *Honors*: " + edu.honors.join(", ") + "\n"}
@@ -229,12 +229,12 @@
         == #title
         #for project in info.projects {
             // Parse ISO date strings into datetime objects
-            let start = if (project.startDate != none) {
+            let start = if ("startDate" in project and  project.startDate != none) {
               utils.strpdate(project.startDate)
             } else {
               none
             }
-            let end = if (project.endDate != none) {
+            let end = if ("endDate" in project and project.endDate != none) {
                utils.strpdate(project.endDate)
             } else {
               none

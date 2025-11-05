@@ -2,7 +2,6 @@ personal:
   name: Thomas Gebert
   email: thomas@gebert.app
   phone: "+1 214-451-7333"
-  url: null
   titles:
     - Staff Software Engineer 
   location:
@@ -20,8 +19,6 @@ personal:
     functional programming. Former staff engineer at Walmart; senior roles at
     Apple and Reddit.
 
-honors: null
-affiliations: null
 work:
   - organization: Schrödinger
     url: https://www.schrodinger.com
@@ -174,8 +171,6 @@ education:
     url: https://www.wgu.edu
     location: Salt Lake City, UT
     studyType: B.S. Computer Science
-    startDate: null
-    endDate: null
     highlights: null
     area: null
     honors: null
@@ -185,8 +180,6 @@ education:
     url: https://www.wgu.edu
     location: Salt Lake City, UT
     studyType: M.S. Computer Science
-    startDate: null
-    endDate: null
     highlights: null
     area: null
     honors: null
@@ -200,8 +193,6 @@ education:
     area: null
     honors: null
     courses: null
-    startDate: null
-    endDate: null
     highlights:
       - "Research in Formal Methods and Robotics (Isabelle, Haskell, FDR4)."
       - "Verification tools for concurrency-safety in robotic systems."
@@ -213,36 +204,26 @@ projects:
   - name: "Talk — Lambda Days 2025 — From ‘Java Sucks’ to ‘Java…Eh, Not Bad’"
     url: null
     affiliation: null
-    startDate: null
-    endDate: null
     highlights:
       - "Overview of Java 21 + Vert.x for functional programmers."
   - name: "Talk — Lambda Days 2023 — Why Design Your Own Levels When Your Computer Can Do It?"
     url: null
     affiliation: null
-    startDate: null
-    endDate: null
     highlights:
       - "Procedural generation of video game levels with WebGL and ClojureScript."
   - name: "Talk — Lambda Days 2022 — Predicting and Preventing Chaos with Formal Methods in TLA+"
     url: null
     affiliation: null
-    startDate: null
-    endDate: null
     highlights:
       - "Introduction to formal methods with TLA+ demo."
   - name: "Talk — Lambda Days 2020 — Distributed Hash Tables, Video, and Fun!"
     affiliation: null
     url: null
-    startDate: null
-    endDate: null
     highlights:
       - "Demonstration of distributed video-sharing system using DHTs."
   - name: "Talk — Clojure/conj 2019 — Distributed Hash Tables, Video, and Fun!"
-    startDate: null
     url: null
     affiliation: null
-    endDate: null
     highlights:
       - "Demonstration of distributed video-sharing system using DHTs."
 
