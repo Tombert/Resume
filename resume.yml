@@ -20,6 +20,17 @@ personal:
     Apple and Reddit.
 
 work:
+  - organization: Freed Inc.
+    url: https://getfreed.ai
+    location: New York, NY
+    positions:
+      - position: Staff Software Engineer
+        startDate: 2025-08-25
+        endDate: Present
+        highlights:
+          - "Rebuilt data pipeline to utlize FiveTran, DBT, and Census with BigQuery, Hubspot, and Intercom"
+          - "Implemented an encrypted data export feature for clinician transcripts and notes."
+          - "Brought over services to use Kubernetes using Argo and GCP." 
   - organization: Schrödinger
     url: https://www.schrodinger.com
     location: New York, NY
@@ -233,7 +244,7 @@ skills:
   - category: Platforms & Frameworks
     skills: [".NET Framework", "Vert.x", "Node.js", "Docker", "ZeroMQ", "core.async"]
   - category: Data & Streaming
-    skills: ["Kafka", "Apache Spark", "PostgreSQL", "RocksDB", "Cassandra"]
+    skills: ["Kafka", "Apache Spark", "PostgreSQL", "RocksDB", "Cassandra", "ZeroMQ", "BigQuery"]
   - category: Cloud & Systems
     skills: ["GCP", "AWS", "Linux", "Shell Scripting"]
   - category: Media & Tools

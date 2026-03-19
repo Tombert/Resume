@@ -224,7 +224,7 @@
     ]}
 }
 
-#let cvprojects(info, title: "Projects", isbreakable: true) = {
+#let cvprojects(info, title: "Public Speaking", isbreakable: true) = {
     if ("projects" in info) and (info.projects != none) {block[
         == #title
         #for project in info.projects {

@@ -5,7 +5,7 @@
 #let uservars = (
     headingfont: "Latin Modern Roman",
     bodyfont: "Latin Modern Roman",
-    fontsize: 10pt, // 10pt, 11pt, 12pt
+    fontsize: 12pt, // 10pt, 11pt, 12pt
     linespacing: 6pt,
     sectionspacing: 0pt,
     showAddress:  true, // true/false show address in contact info
