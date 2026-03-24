@@ -50,6 +50,7 @@
 #show: doc => cvinit(doc)
 
 #cvheading(cvdata, uservars)
+#cvsummary(cvdata)
 #cvskills(cvdata)
 #cveducation(cvdata)
 #cvwork(cvdata)

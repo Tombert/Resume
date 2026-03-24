@@ -118,6 +118,13 @@
     ]
 }
 
+#let cvsummary(info, title: "Summary") = {
+    if ("personal" in info) and ("summary" in info.personal) and (info.personal.summary != none) {block[
+        == #title
+        #info.personal.summary
+    ]}
+}
+
 #let cvwork(info, title: "Work Experience", isbreakable: false) = {
     if ("work" in info) and (info.work != none) {block[
         == #title
@@ -341,7 +348,7 @@
     ]}
 }
 
-#let cvskills(info, title: "Skills, Languages, Interests", isbreakable: true) = {
+#let cvskills(info, title: "Skills, Languages", isbreakable: true) = {
     if (("languages" in info) or ("skills" in info) or ("interests" in info)) and ((info.languages != none) or (info.skills != none) or (info.interests != none)) {block(breakable: isbreakable)[
         == #title
         #if ("languages" in info) and (info.languages != none) [
