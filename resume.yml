@@ -13,7 +13,7 @@ personal:
       username: tombert
       url: https://github.com/tombert
   summary: >-
-    Engineer with 15 years driving technical strategy across distributed systems and data infrastructure at companies including Apple, Walmart, and Schrödinger. Architect platform-level changes that deliver measurable business outcomes, including a backend rewrite that cut cloud storage costs by ~80%. Frequent international conference speaker (Lambda Days, Clojure/conj) on formal methods and distributed systems, with deep experience mentoring engineers and shaping cross-team architecture.
+    Engineer with 15 years driving technical strategy across distributed systems and data infrastructure at companies including Apple, Walmart, and Schrödinger. Architect platform-level changes that deliver measurable business outcomes, including a backend rewrite that cut cloud storage costs by  ≈80%. Frequent international conference speaker (Lambda Days, Clojure/conj) on formal methods and distributed systems, with deep experience mentoring engineers and shaping cross-team architecture.
 
 work:
   - organization: Freed Inc.
@@ -22,7 +22,7 @@ work:
     positions:
       - position: Staff Software Engineer
         startDate: 2025-08-25
-        endDate: Present
+        endDate: 2026-07-07
         highlights:
           - "Set technical direction for the data platform, architecting and leading the rebuild of the data pipeline on FiveTran, DBT, and Census with BigQuery, Hubspot, and Intercom."
           - "Drove the design and implementation of an encrypted data export system for clinician transcripts and notes, establishing security patterns adopted across the platform."
@@ -36,7 +36,7 @@ work:
         endDate: 2025-04-30
         highlights:
           - "Shaped the technical strategy for streaming storage architecture, driving augmentation of RocksDB and optimization of write throughput across streaming applications."
-          - "Architected and led the replacement of RocksDB with a custom PostgreSQL backend (50% of prior throughput) while cutting cloud storage costs by ~80% and reducing duplication across nodes."
+          - "Architected and led the replacement of RocksDB with a custom PostgreSQL backend while cutting cloud storage costs by ≈80% and reducing duplication across nodes."
           - "Championed the adoption of Vert.x, Caffeine caches, Bloom filters, and LMAX Disruptor to minimize latency across the platform."
           - "Guided deployment and operational practices for distributed apps on Google Cloud Platform."
           - "Owned the topology and evolution of Kafka Streams applications."
